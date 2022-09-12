@@ -15,7 +15,20 @@
 \renewcommand\abstractname{ABSTRACT}
 \begin{abstract}
 \vspace{5cm}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna mauris, sagittis sit amet aliquet ut, facilisis et nibh. Praesent turpis tortor, dignissim ut interdum eu, porttitor ut orci. Curabitur laoreet malesuada fermentum. In posuere, purus eu pulvinar luctus, eros urna tempor magna, eu tincidunt erat eros nec turpis. Vestibulum at semper lacus. Nullam tristique lacus vel nibh porta a vehicula tellus volutpat. Pellentesque cursus ullamcorper ante, ut eleifend nisl aliquam id. Nulla porta ornare fermentum. Aliquam id magna sed erat malesuada viverra. Donec non mauris eros, nec egestas ligula. Suspendisse eu tempor ligula. Aliquam egestas nulla vel augue iaculis iaculis nec in risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent malesuada fringilla sapien a faucibus.
+Single-person human pose estimation facilitates markerless movement analysis in sports, as well as in clinical applications.
+Still, state-of-the-art models for human pose estimation generally do not meet the requirements of real-life applications.
+The proliferation of deep learning techniques has resulted in the development of many advanced approaches. However,
+with the progresses in the field, more complex and inefficient models have also been introduced, which have caused
+tremendous increases in computational demands. To cope with these complexity and inefficiency challenges, we propose
+a novel convolutional neural network architecture, called EfficientPose, which exploits recently proposed EfficientNets
+in order to deliver efficient and scalable single-person pose estimation. EfficientPose is a family of models harnessing
+an effective multi-scale feature extractor and computationally efficient detection blocks using mobile inverted bottleneck
+convolutions, while at the same time ensuring that the precision of the pose configurations is still improved. Due to its low
+complexity and efficiency, EfficientPose enables real-world applications on edge devices by limiting the memory footprint
+and computational cost. The results from our experiments, using the challenging MPII single-person benchmark, show that
+the proposed EfficientPose models substantially outperform the widely-used OpenPose model both in terms of accuracy and
+computational efficiency. In particular, our top-performing model achieves state-of-the-art accuracy on single-person MPII,
+with low-complexity ConvNets.
 \end{abstract}
 
 
@@ -67,26 +80,60 @@ Student 1
 \setcounter{page}{1}
 \renewcommand{\baselinestretch}{1.50}
 \section{Overview}
-The mathematical roots of the idea of fractals have been traced through a formal path of published works, starting in the 17th century with notions of recursion, then moving through increasingly rigorous mathematical treatment of the concept to the study of continuous but not differentiable functions in the 19th century, and on to the coining of the word fractal in the 20th century with a subsequent burgeoning of interest in fractals and computer-based modelling in the 21st century.
+Single-person human pose estimation (HPE) refers to the
+computer vision task of localizing human skeletal keypoints
+of a person from an image or video frames. Single-
+person HPE has many real-world applications, ranging from
+outdoor activity recognition and computer animation to clinical assessments of motor repertoire and skill practice
+among professional athletes. The proliferation of deep
+convolutional neural networks (ConvNets) has advanced
+HPE and further widen its application areas. ConvNet-based
+HPE with its increasingly complex network structures,
+combined with transfer learning, is a very challenging task.
+However, the availability of high-performing ImageNet
+backbones, together with large tailor-made datasets, such
+as MPII for 2D pose estimation, has facilitated the
+development of new improved methods to address the
+challenges.
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=.2]{mandelbrot}
-\caption{Mandelbrot Fractal}
+\includegraphics[scale=.3]{pose-estimation}
+\caption{Human Pose Estimation Demo}
 \end{center}
 \end{figure}
-The word "fractal" often has different connotations for laypeople than mathematicians, where the layperson is more likely to be familiar with fractal art than a mathematical conception. The mathematical concept is difficult to formally define even for mathematicians, but key features can be understood with little mathematical background.
-
-The feature of "self-similarity", for instance, is easily understood by analogy to zooming in with a lens or other device that zooms in on digital images to uncover finer, previously invisible, new structure. If this is done on fractals, however, no new detail appears; nothing changes and the same pattern repeats over and over, or for some fractals, nearly the same pattern reappears over and over. Self-similarity itself is not necessarily counter-intuitive (e.g., people have pondered self-similarity informally such as in the infinite regress in parallel mirrors or the homunculus, the little man inside the head of the little man inside the head...). 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna mauris, sagittis sit amet aliquet ut, facilisis et nibh. Praesent turpis tortor, dignissim ut interdum eu, porttitor ut orci. Curabitur laoreet malesuada fermentum. In posuere, purus eu pulvinar luctus, eros urna tempor magna, eu tincidunt erat eros nec turpis. Vestibulum at semper lacus. Nullam tristique lacus vel nibh porta a vehicula tellus volutpat. Pellentesque cursus ullamcorper ante, ut eleifend nisl aliquam id. Nulla porta ornare fermentum. Aliquam id magna sed erat malesuada viverra. Donec non mauris eros, nec egestas ligula. Suspendisse eu tempor ligula. Aliquam egestas nulla vel augue iaculis iaculis nec in risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent malesuada fringilla sapien a faucibus.
-
+An increasing trend in computer vision has driven towards
+more efficient models. Recently, Efficient-
+Net was released as a scalable ConvNet architecture,
+setting benchmark record on ImageNet with a more com-
+putationally efficient architecture. 
 \section{Problem Statement}
 
-lacus vel nibh porta a vehicula tellus volutpat. Pellentesque cursus ullamcorper ante, ut eleifend nisl aliquam id. Nulla porta ornare fermentum. Aliquam id magna sed erat malesuada viverra. Donec non mauris eros, nec egestas ligula. Suspendisse eu tempor ligula. Aliquam egestas nulla vel augue iaculis iaculis nec in risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent malesuada fringilla sapien a faucibus.
+Despite the availability of more performant, efficient layers and architecture's, it has not quite transalated
+into fruitful results within human pose estimation, there is still a lack of architectures that
+are both accurate and computationally efficient at the same
+time. In general, current state-of-the-art architectures are
+computationally expensive and highly complex, thus making them hard to replicate, cumbersome to optimize, and
+impractical to embed into real-world applications. \par
+
+Minimal and efficient model architectures are coveted for their ability to run on edge devices with minimal hardware requirements.
+This also greatly reduces the response times thereby becoming increasingly relevant for real-time applications.
+The ability to run real-time is a crucial feature for pose estimation, because often times in most applications it's desirable to obtain the outputs instantly to judge the output.
 
 \section{Objective}
 
-lacus vel nibh porta a vehicula tellus volutpat. Pellentesque cursus ullamcorper ante, ut eleifend nisl aliquam id. Nulla porta ornare fermentum. Aliquam id magna sed erat malesuada viverra. Donec non mauris eros, nec egestas ligula. Suspendisse eu tempor ligula. Aliquam egestas nulla vel augue iaculis iaculis nec in risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent malesuada fringilla sapien a faucibus.
+Primary objective is to exploit recent advances in ConvNets and shed some light onto
+an improved approach called EfficientPose. The main idea
+is to modify OpenPose, a well-known pose estimation model into a family of scalable ConvNets
+for high-precision and computationally efficient single-person
+pose estimation from 2D images. 
+Then we evaluate the EfficientPose model by comparing
+it against the original OpenPose model on single-person
+HPE. After that, we compare it against the current state-of-
+the-art single-person HPE methods on the official MPII
+challenge, focusing on accuracy as a function of the number
+of parameters. EfficientPose models aim to
+elicit high computational efficiency, while bridging the gap
+in availability of high-precision HPE networks.
 
 \chapter{Related works}
 
