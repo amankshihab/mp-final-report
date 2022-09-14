@@ -137,43 +137,143 @@ in availability of high-precision HPE networks.
 
 \chapter{Related works}
 
-The world population is the sum of all humans on Earth. As of today, it is estimated to number 7.004 billion by the United States Census Bureau. The USCB estimates that the world population exceeded 7 billion on March 12, 2012. According to a separate estimate by the United Nations Population Fund, it reached this milestone on October 31, 2011.
-\begin{table}[h!]
-\begin{center}
-	\caption{World Population Table} 
-\begin{tabular}{|c|c|c|c|}
+Ever since the increased adoption of ConvNets for HPE following the
+success of DeepPose has set the path for accurate HPE.
+Another breakthrough in HPE was provided by OpenPose. OpenPose comprises a multi-
+stage architecture performing a series of detection passes.
+Provided an input image of 368 × 368 pixels, OpenPose
+utilizes an ImageNet pretrained VGG-19 backbone to
+extract basic features. The features are
+supplied to a DenseNet-inspired detection block
+arranged as five dense blocks, each containing three 3×
+3 convolutions with PReLU activations. The detection
+blocks are stacked in a sequence. First, four passes of part affinity fields map the associations
+between body keypoints. Subsequently, two detection
+passes predict keypoint heatmaps to
+obtain refined keypoint coordinate estimates. In terms of
+level of detail in the keypoint coordinates, OpenPose is
+restricted by its output resolution of 46 × 46 pixels.
+The OpenPose architecture can be improved by recent
+advancements in ConvNets, as follows: First, automated
+network architecture search has found backbones that are more precise and efficient in image
+classification than VGG and ResNets. Compound model scaling can
+balance the image resolution, width (number of networkchannels), and depth (number of network layers). This
+resulted in scalable convolutional neural networks, called
+EfficientNets, with which the main goal was to provide
+lightweight models with a sensible trade-off between model
+complexity and accuracy across various computational
+budgets. For each model variant EfficientNet, from the
+most computationally efficient one being EfficientNet-B0
+to the most accurate model, EfficientNet-B7.The total no. of FLOPS increases by a factor of 2, given by:
 	
-\hline Rank & Country & Population  & Percentage  \\ 
-\hline 1 & China & 1,347,350,000 & 19.24\% \\ 
-\hline 2 & India & 1,210,193,422  & 17.28\% \\ 
-\hline 3 & United States & 313,269,000 & 4.47\% \\ 
-\hline 
-\end{tabular}
-%\caption{World Population Table} 
-\end{center}
-\end{table}
-The world's population is unevenly distributed, with six of Earth's seven continents being permanently inhabited on a large scale. As of 2012, Asia is the most populous continent, with its 4.1 billion inhabitants accounting for over 60\% of the world population. The world's two most-populated countries alone, China and India, constitute about 37\% of the world's population. Africa is the second-most-populated continent, with around 1 billion people, or 15\% of the world's population. Europe's 733 million people make up 11\% of the world's population, while the Latin American and Caribbean regions are home to 589 million (9\%).
+	$$
+	(\alpha. \beta^2. \gamma ^ 2) ^ \phi
+	$$
+where $$ \alpha = 1.2 , \beta = 1.1, \gamma = 1.15 $$
+They denote the coefficients for depth, width and resolution respectively.
+% \begin{table}[h!]
+% \begin{center}
+% 	\caption{World Population Table} 
+% \begin{tabular}{|c|c|c|c|}
+	
+% \hline Rank & Country & Population  & Percentage  \\ 
+% \hline 1 & China & 1,347,350,000 & 19.24\% \\ 
+% \hline 2 & India & 1,210,193,422  & 17.28\% \\ 
+% \hline 3 & United States & 313,269,000 & 4.47\% \\ 
+% \hline 
+% \end{tabular}
+% %\caption{World Population Table} 
+% \end{center}
+% \end{table}
+\begin{figure}[h!]
+	\begin{center}
+	\includegraphics[scale=.8]{OpenPose}
+	\caption{OpenPose}
+	\end{center}
+	\end{figure}
+\par
+Second, parallel multi-scale feature extraction has improved
+the precision levels in HPE, emphasizing
+both high spatial resolution and low-scale semantics.
+However, existing multi-scale approaches in HPE are
+computationally expensive, both due to their large size and
+high computational requirements. For example, a typical
+multi-scale HPE approach has often a size of 16 to 58
+million parameters and requires 10 to 128 GFLOPS. To cope with this, we propose cross-
+resolution features, operating on high- and low-resolution
+input images, to integrate features from multiple abstraction
+levels with low overhead in network complexity and with
+high computational efficiency. Existing works on Siamese
+ConvNets have been promising in utilizing parallel network
+backbones. Third, mobile inverted bottleneck
+convolution (MBConv) with built-in squeeze-and-
+excitation (SE) and Swish activation integrated
+in EfficientNets has proven more accurate in image
+classification tasks than regular convolutions, while substantially reducing the computational costs. The efficiency of MBConv modules stem from
+the depthwise convolutions operating in a channel-wise
+manner. With this approach, it is possible to reduce the
+computational cost by a factor proportional to the number
+of channels. Hence, by replacing the regular 3 × 3
+convolutions with up to 384 input channels in the detection
+blocks of OpenPose with MBConvs, we can obtain more
+computationally efficient detection blocks. Further, SE
+selectively emphasizes discriminative image features,
+which may reduce the required number of convolutions and
+detection passes by providing a global perspective on the
+estimation task at all times. Using MBConv with SE may
+have the potential to decrease the number of dense blocks
+in OpenPose. Fourth, transposed convolutions with bilinear
+kernel scale up the low-resolution feature maps, thus
+enabling a higher level of detail in the output confidence
+maps.The main advantage
+of this is that we can use ConvNets that are small and
+computationally efficient enough to run on edge devices
+with little memory and low processing power, which is
+impossible with OpenPose.
 
 
 \chapter{Design}
 
-In number theory, Fermat's Last Theorem states that no three positive integers a, b, and c can satisfy the equation:
-$$
-a^{n} + b^{n} = c^{n}
-$$ 
-for any integer value of n greater than two 
-
-This theorem was first conjectured by Pierre de Fermat in 1637, famously in the margin of a copy of Arithmetica where he claimed he had a proof that was too large to fit in the margin. No successful proof was published until 1995 despite the efforts of countless mathematicians during the 358 intervening years. The unsolved problem stimulated the development of algebraic number theory in the 19th century and the proof of the modularity theorem in the 20th. It is among the most famous theorems in the history of mathematics and prior to its 1995 proof was in the Guinness Book of World Records for "most difficult mathematical problems".
-
 \section{Introduction}
-In mathematics, Stirling's approximation (or Stirling's formula) is an approximation for large factorials. It is named after James Stirling.
+Here, the model architecture we use, namely EfficientPose exploits the recent advancements in ConvNets
+and additionally concatenates high-level and low-level features. The net result is a much more efficient model
+with better accuracy and needing fewer computaional resources.
 
+\section{Architecture}
 
-The formula as typically used in applications is:
+\begin{figure}[h!]
+	\begin{center}
+	\includegraphics[scale=0.6]{EfficientPose}
+	\caption{EfficientPose}
+\end{center}
+\end{figure}
 
-$$
-\ln (n!) = n \ln n - n  + O(\ln(n))
-$$
+The model takes in two inputs, one is the high-level features and second is the low-level features.
+The low level features are obtained by downsampling an image to half of it's height and width using an average pooling layer.
+The feature extractors here are initial layers of EfficientNet. For high level extractor, $\phi \in [0,7]$ and 
+for the low level extractor $\phi \in [0,3]$.
+\par
+These extracted features and then concatendated together to obtain cross-resolution features.
+This helps us to emphasize the important local factors in the image of interest.
+\par
+The input to the next phase of the model is the cross-resolution features obtained in the previous step.
+Here the required keypoints are localized through an iterative process, where each
+detection pass performs supervised prediction of output maps.
+Each detection pass comprises a detection block
+and a single 1 × 1 convolution for output prediction.
+The detection blocks across all detection passes exhibit the
+same basic architecture, comprising Mobile DenseNets.
+Data from here is forwarded to the successive layers through skip connections.
+Here, we also avoid downsampling of the output to preserve the resolution.
+The original mobile convnets are modified by adding an E-swish activation function with $\beta$ value 1.25.
+\par
+The overall detection is performed in two rounds. Initially, the overall pose of the person is anticipated through a single pass of skeleton estimation. This helps especially when
+there are multiple people present in the frame.
+After the skeleton estimation is done two detection passes are performed to estimate heatmaps for points of interest.
+
+\par
+Another improvement on top of OpenPose is that, EfficientPose projects lower-resoltion image onto a higher resolution space using transposed convolution to allow an increased level of detail, whereas in OpenPose the heatmaps are
+constrained to the lower space.
 \section{Design of modules}
 In mathematics, Stirling's approximation (or Stirling's formula) is an approximation for large factorials. It is named after James Stirling.
 
