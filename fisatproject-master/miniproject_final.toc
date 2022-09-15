@@ -16,5 +16,6 @@
 \contentsline {section}{\numberline {4.1}MPII Human Pose Dataset}{7}{}%
 \contentsline {section}{\numberline {4.2}Leeds Sports Dataset}{7}{}%
 \contentsline {chapter}{\numberline {5}Results}{9}{}%
-\contentsline {chapter}{\numberline {6}Conclusion}{10}{}%
-\contentsline {chapter}{Appendices}{12}{}%
+\contentsline {chapter}{\numberline {6}Outputs}{10}{}%
+\contentsline {chapter}{\numberline {7}Conclusion}{13}{}%
+\contentsline {chapter}{Appendices}{15}{}%
