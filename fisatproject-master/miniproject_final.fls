@@ -418,8 +418,9 @@ INPUT ./pose-3.eps
 INPUT pose-3.eps
 INPUT ./pose-3.eps
 INPUT ./pose-3.eps
-INPUT ./pose-3.eps
 INPUT ./pose-3-eps-converted-to.pdf
+INPUT ./pose-3-eps-converted-to.pdf
+INPUT ./pose-3.eps
 INPUT ./pose-3-eps-converted-to.pdf
 INPUT ./pose-3-eps-converted-to.pdf
 INPUT ./pose-3-eps-converted-to.pdf

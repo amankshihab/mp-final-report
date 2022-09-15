@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.20)  15 SEP 2022 12:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.20)  15 SEP 2022 13:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -289,7 +289,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--8
 
  [1
 
-] [2] [3] (./miniproject_final.toc
+] [2] (./miniproject_final.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -300,21 +300,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `miniproject_final.toc'.
 
- [4
+ [3
 
 
 ] (./miniproject_final.lof)
 \tf@lof=\write4
 \openout4 = `miniproject_final.lof'.
 
- [5
+ [4
 
 
 ] (./miniproject_final.lot)
 \tf@lot=\write5
 \openout5 = `miniproject_final.lot'.
 
- [6
+ [5
 
 
 ]
@@ -326,12 +326,12 @@ Package epstopdf Info: Source file: <pose-estimation.eps>
 (epstopdf)                    date: 2022-09-12 19:24:58
 (epstopdf)                    size: 376784 bytes
 (epstopdf)             Command: <repstopdf --outfile=pose-estimation-eps-converted-to.pdf pose-estimation.eps>
-(epstopdf)             \includegraphics on input line 100.
+(epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
-<pose-estimation-eps-converted-to.pdf, id=40, 785.93625pt x 547.04375pt>
+<pose-estimation-eps-converted-to.pdf, id=37, 785.93625pt x 547.04375pt>
 File: pose-estimation-eps-converted-to.pdf Graphic file (type pdf)
 <use pose-estimation-eps-converted-to.pdf>
-Package pdftex.def Info: pose-estimation-eps-converted-to.pdf  used on input line 100.
+Package pdftex.def Info: pose-estimation-eps-converted-to.pdf  used on input line 109.
 (pdftex.def)             Requested size: 235.78268pt x 164.11438pt.
 [1
 
@@ -352,15 +352,15 @@ Package epstopdf Info: Source file: <OpenPose.eps>
 (epstopdf)                    date: 2022-09-14 23:09:45
 (epstopdf)                    size: 74108 bytes
 (epstopdf)             Command: <repstopdf --outfile=OpenPose-eps-converted-to.pdf OpenPose.eps>
-(epstopdf)             \includegraphics on input line 190.
+(epstopdf)             \includegraphics on input line 199.
 Package epstopdf Info: Output file is already uptodate.
-<OpenPose-eps-converted-to.pdf, id=49, 585.18625pt x 227.85126pt>
+<OpenPose-eps-converted-to.pdf, id=46, 585.18625pt x 227.85126pt>
 File: OpenPose-eps-converted-to.pdf Graphic file (type pdf)
 <use OpenPose-eps-converted-to.pdf>
-Package pdftex.def Info: OpenPose-eps-converted-to.pdf  used on input line 190.
+Package pdftex.def Info: OpenPose-eps-converted-to.pdf  used on input line 199.
 (pdftex.def)             Requested size: 468.14963pt x 182.28123pt.
 
-Overfull \hbox (49.89595pt too wide) in paragraph at lines 190--191
+Overfull \hbox (49.89595pt too wide) in paragraph at lines 199--200
  [] 
  []
 
@@ -386,12 +386,12 @@ Package epstopdf Info: Source file: <EfficientPose.eps>
 (epstopdf)                    date: 2022-09-14 23:26:12
 (epstopdf)                    size: 108345 bytes
 (epstopdf)             Command: <repstopdf --outfile=EfficientPose-eps-converted-to.pdf EfficientPose.eps>
-(epstopdf)             \includegraphics on input line 247.
+(epstopdf)             \includegraphics on input line 256.
 Package epstopdf Info: Output file is already uptodate.
-<EfficientPose-eps-converted-to.pdf, id=62, 643.40375pt x 322.20375pt>
+<EfficientPose-eps-converted-to.pdf, id=59, 643.40375pt x 322.20375pt>
 File: EfficientPose-eps-converted-to.pdf Graphic file (type pdf)
 <use EfficientPose-eps-converted-to.pdf>
-Package pdftex.def Info: EfficientPose-eps-converted-to.pdf  used on input line 247.
+Package pdftex.def Info: EfficientPose-eps-converted-to.pdf  used on input line 256.
 (pdftex.def)             Requested size: 386.04523pt x 193.32373pt.
 [5
 
@@ -424,20 +424,20 @@ Package epstopdf Info: Source file: <TrainProgression.eps>
 (epstopdf)                    date: 2022-09-15 00:34:52
 (epstopdf)                    size: 56745 bytes
 (epstopdf)             Command: <repstopdf --outfile=TrainProgression-eps-converted-to.pdf TrainProgression.eps>
-(epstopdf)             \includegraphics on input line 313.
+(epstopdf)             \includegraphics on input line 322.
 Package epstopdf Info: Output file is already uptodate.
-<TrainProgression-eps-converted-to.pdf, id=79, 654.445pt x 321.2pt>
+<TrainProgression-eps-converted-to.pdf, id=76, 654.445pt x 321.2pt>
 File: TrainProgression-eps-converted-to.pdf Graphic file (type pdf)
 <use TrainProgression-eps-converted-to.pdf>
-Package pdftex.def Info: TrainProgression-eps-converted-to.pdf  used on input line 313.
+Package pdftex.def Info: TrainProgression-eps-converted-to.pdf  used on input line 322.
 (pdftex.def)             Requested size: 458.10838pt x 224.83847pt.
 
-Overfull \hbox (39.8547pt too wide) in paragraph at lines 313--314
+Overfull \hbox (39.8547pt too wide) in paragraph at lines 322--323
  [] 
  []
 
 
-Overfull \hbox (112.35713pt too wide) in paragraph at lines 322--331
+Overfull \hbox (112.35713pt too wide) in paragraph at lines 331--340
  [] 
  []
 
@@ -452,12 +452,12 @@ Package epstopdf Info: Source file: <op-1.eps>
 (epstopdf)                    date: 2022-09-15 12:47:21
 (epstopdf)                    size: 46567 bytes
 (epstopdf)             Command: <repstopdf --outfile=op-1-eps-converted-to.pdf op-1.eps>
-(epstopdf)             \includegraphics on input line 339.
+(epstopdf)             \includegraphics on input line 348.
 Package epstopdf Info: Output file is already uptodate.
-<op-1-eps-converted-to.pdf, id=85, 304.13625pt x 491.8375pt>
+<op-1-eps-converted-to.pdf, id=82, 304.13625pt x 491.8375pt>
 File: op-1-eps-converted-to.pdf Graphic file (type pdf)
 <use op-1-eps-converted-to.pdf>
-Package pdftex.def Info: op-1-eps-converted-to.pdf  used on input line 339.
+Package pdftex.def Info: op-1-eps-converted-to.pdf  used on input line 348.
 (pdftex.def)             Requested size: 212.8939pt x 344.28389pt.
 Package epstopdf Info: Source file: <pose-2.eps>
 (epstopdf)                    date: 2022-09-15 12:45:16
@@ -466,12 +466,12 @@ Package epstopdf Info: Source file: <pose-2.eps>
 (epstopdf)                    date: 2022-09-15 12:47:34
 (epstopdf)                    size: 44997 bytes
 (epstopdf)             Command: <repstopdf --outfile=pose-2-eps-converted-to.pdf pose-2.eps>
-(epstopdf)             \includegraphics on input line 346.
+(epstopdf)             \includegraphics on input line 355.
 Package epstopdf Info: Output file is already uptodate.
-<pose-2-eps-converted-to.pdf, id=86, 296.10625pt x 485.815pt>
+<pose-2-eps-converted-to.pdf, id=83, 296.10625pt x 485.815pt>
 File: pose-2-eps-converted-to.pdf Graphic file (type pdf)
 <use pose-2-eps-converted-to.pdf>
-Package pdftex.def Info: pose-2-eps-converted-to.pdf  used on input line 346.
+Package pdftex.def Info: pose-2-eps-converted-to.pdf  used on input line 355.
 (pdftex.def)             Requested size: 207.27295pt x 340.06818pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -480,17 +480,15 @@ Package epstopdf Info: Source file: <pose-3.eps>
 (epstopdf)                    date: 2022-09-15 12:45:53
 (epstopdf)                    size: 417861 bytes
 (epstopdf)             Output file: <pose-3-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=pose-3-eps-converted-to.pdf pose-3.eps>
-(epstopdf)             \includegraphics on input line 353.
-runsystem(repstopdf --outfile=pose-3-eps-converted-to.pdf pose-3.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <pose-3-eps-converted-to.pdf>
 (epstopdf)                    date: 2022-09-15 12:47:39
-(epstopdf)                    size: 28996 bytes.
-<pose-3-eps-converted-to.pdf, id=87, 169.63374pt x 488.82625pt>
+(epstopdf)                    size: 28996 bytes
+(epstopdf)             Command: <repstopdf --outfile=pose-3-eps-converted-to.pdf pose-3.eps>
+(epstopdf)             \includegraphics on input line 362.
+Package epstopdf Info: Output file is already uptodate.
+<pose-3-eps-converted-to.pdf, id=84, 169.63374pt x 488.82625pt>
 File: pose-3-eps-converted-to.pdf Graphic file (type pdf)
 <use pose-3-eps-converted-to.pdf>
-Package pdftex.def Info: pose-3-eps-converted-to.pdf  used on input line 353.
+Package pdftex.def Info: pose-3-eps-converted-to.pdf  used on input line 362.
 (pdftex.def)             Requested size: 118.7428pt x 342.17603pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -517,12 +515,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Chapter 7.
 [13
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 369--370
-[]\OT1/cmr/m/n/12 Wikipedia, ``Don-ald knuth.'' $\OT1/cmtt/m/n/12 http : / / en . wikipedia . org / wiki / Donald _
- []
-
-[14
+] [14
 
 ] [15
 
@@ -537,18 +530,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16] (./miniproject_final.aux) ) 
 Here is how much of TeX's memory you used:
- 4811 strings out of 478238
- 77906 string characters out of 5850456
- 379327 words of memory out of 5000000
- 22990 multiletter control sequences out of 15000+600000
+ 4813 strings out of 478238
+ 77921 string characters out of 5850456
+ 380333 words of memory out of 5000000
+ 22992 multiletter control sequences out of 15000+600000
  477553 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,11n,76p,732b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,11n,76p,732b,308s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on miniproject_final.pdf (24 pages, 1138992 bytes).
+Output written on miniproject_final.pdf (23 pages, 1142887 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
+ 175 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
