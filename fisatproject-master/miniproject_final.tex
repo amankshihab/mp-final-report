@@ -229,7 +229,8 @@ maps.The main advantage
 of this is that we can use ConvNets that are small and
 computationally efficient enough to run on edge devices
 with little memory and low processing power, which is
-impossible with OpenPose.
+impossible with OpenPose. We can also alter the parameters of EfficientNet to obtain different variants
+with accuracies and efficiencies that are different.
 
 
 \chapter{Design}
@@ -274,20 +275,61 @@ After the skeleton estimation is done two detection passes are performed to esti
 \par
 Another improvement on top of OpenPose is that, EfficientPose projects lower-resoltion image onto a higher resolution space using transposed convolution to allow an increased level of detail, whereas in OpenPose the heatmaps are
 constrained to the lower space.
-\section{Design of modules}
+\section{Modules}
+\subsection{EfficientNet}
 In mathematics, Stirling's approximation (or Stirling's formula) is an approximation for large factorials. It is named after James Stirling.
 
+\subsection{E-Swish}
+
+\section{Accuracy Measures}
+\chapter{Datasets}
+\section{MPII Human Pose Dataset}
+MPII Human Pose dataset is a state of the art benchmark for evaluation of articulated human pose estimation. The dataset includes around 25K images containing over 40K people with annotated body joints. The images were systematically collected using an established taxonomy of every day human activities. Overall the dataset covers 410 human activities and each image is provided with an activity label. Each image was extracted from a YouTube video and provided with preceding and following un-annotated frames. In addition, for the test set we obtained richer annotations including body part occlusions and 3D torso and head orientations.
+The model was trained primarily on this dataset.
+
+\section{Leeds Sports Dataset}
+This dataset contains 2000 pose annotated images of mostly sports people gathered from Flickr using the tags shown above. The images have been scaled such that the most prominent person is roughly 150 pixels in length. Each image has been annotated with 14 joint locations. Left and right joints are consistently labelled from a person-centric viewpoint. Attributions and Flickr URLs for the original images can be found in the JPEG comment field of each image file. 
+The ordering of the joints are as follows:
+\begin{enumerate}
+	\item Right Ankle
+	\item Right Knew
+	\item Right Hip
+	\item Left Hip
+	\item Left Knee
+	\item Left Ankle
+	\item Right Wrist
+	\item Right Elbow
+	\item Right Shoulder
+	\item Left Shoulder
+	\item Left Elbow
+	\item Left Wrist
+	\item Neck
+	\item Head Top
+\end{enumerate}
 \chapter{Results}
 
-Compiled languages arelanguages typically processed by compilers, though theoretically any language can be compiled or interpreted. The important ones are:
-\begin{itemize}
-\item Ada
-\item C
-\item C++
-\item Fortran
-\item Java
-\end{itemize}
+\begin{figure}[h!]
+	\begin{center}
+	\includegraphics[scale=0.7]{TrainProgression}
+	\caption{Convergence of mean error on OpenPose and EfficientPose}
+\end{center}
+\end{figure}
+Some text
 
+\begin{table}[h!]
+	\begin{center}
+		\caption{Comparison of EfficientPose and OpenPose on MPII validation dataset} 
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		
+	\hline Model & Parameters & Parameter Reduction  & FLOPs  & FLOP Reduction & \(PCK_h\)@50 & \(PCK_h\)@10 \\ 
+	\hline 1 & China & 1,347,350,000 & 19.24\% \\ 
+	\hline 2 & India & 1,210,193,422  & 17.28\% \\ 
+	\hline 3 & United States & 313,269,000 & 4.47\% \\ 
+	\hline 
+	\end{tabular}
+	%\caption{World Population Table} 
+	\end{center}
+	\end{table}
 
 
 

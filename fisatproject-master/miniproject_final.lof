@@ -1,6 +1,10 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Mandelbrot Fractal}}{1}{}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Human Pose Estimation Demo}}{1}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces OpenPose}}{4}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces EfficientPose}}{5}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Convergence of mean error on OpenPose and EfficientPose}}{9}{}%
 \addvspace {10\p@ }

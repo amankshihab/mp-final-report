@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.20)  10 SEP 2022 18:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.20)  15 SEP 2022 00:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -319,23 +319,23 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Chapter 1.
-Package epstopdf Info: Source file: <mandelbrot.eps>
-(epstopdf)                    date: 2020-05-28 19:48:36
-(epstopdf)                    size: 1778513 bytes
-(epstopdf)             Output file: <mandelbrot-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-05-28 19:48:36
-(epstopdf)                    size: 218358 bytes
-(epstopdf)             Command: <repstopdf --outfile=mandelbrot-eps-converted-to.pdf mandelbrot.eps>
-(epstopdf)             \includegraphics on input line 73.
+Package epstopdf Info: Source file: <pose-estimation.eps>
+(epstopdf)                    date: 2022-09-12 19:24:31
+(epstopdf)                    size: 2975673 bytes
+(epstopdf)             Output file: <pose-estimation-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-09-12 19:24:58
+(epstopdf)                    size: 376784 bytes
+(epstopdf)             Command: <repstopdf --outfile=pose-estimation-eps-converted-to.pdf pose-estimation.eps>
+(epstopdf)             \includegraphics on input line 100.
 Package epstopdf Info: Output file is already uptodate.
-<mandelbrot-eps-converted-to.pdf, id=40, 1028.84375pt x 771.88374pt>
-File: mandelbrot-eps-converted-to.pdf Graphic file (type pdf)
-<use mandelbrot-eps-converted-to.pdf>
-Package pdftex.def Info: mandelbrot-eps-converted-to.pdf  used on input line 73.
-(pdftex.def)             Requested size: 205.7651pt x 154.37401pt.
+<pose-estimation-eps-converted-to.pdf, id=40, 785.93625pt x 547.04375pt>
+File: pose-estimation-eps-converted-to.pdf Graphic file (type pdf)
+<use pose-estimation-eps-converted-to.pdf>
+Package pdftex.def Info: pose-estimation-eps-converted-to.pdf  used on input line 100.
+(pdftex.def)             Requested size: 235.78268pt x 164.11438pt.
 [1
 
- <./mandelbrot-eps-converted-to.pdf>]
+ <./pose-estimation-eps-converted-to.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -345,28 +345,116 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2]
 Chapter 2.
+Package epstopdf Info: Source file: <OpenPose.eps>
+(epstopdf)                    date: 2022-09-14 23:07:38
+(epstopdf)                    size: 196297 bytes
+(epstopdf)             Output file: <OpenPose-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-09-14 23:09:45
+(epstopdf)                    size: 74108 bytes
+(epstopdf)             Command: <repstopdf --outfile=OpenPose-eps-converted-to.pdf OpenPose.eps>
+(epstopdf)             \includegraphics on input line 190.
+Package epstopdf Info: Output file is already uptodate.
+<OpenPose-eps-converted-to.pdf, id=49, 585.18625pt x 227.85126pt>
+File: OpenPose-eps-converted-to.pdf Graphic file (type pdf)
+<use OpenPose-eps-converted-to.pdf>
+Package pdftex.def Info: OpenPose-eps-converted-to.pdf  used on input line 190.
+(pdftex.def)             Requested size: 468.14963pt x 182.28123pt.
+
+Overfull \hbox (49.89595pt too wide) in paragraph at lines 190--191
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [3
 
 ]
-Chapter 3.
-[4
 
-]
-Chapter 4.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4 <./OpenPose-eps-converted-to.pdf>]
+Chapter 3.
+Package epstopdf Info: Source file: <EfficientPose.eps>
+(epstopdf)                    date: 2022-09-14 23:26:11
+(epstopdf)                    size: 353932 bytes
+(epstopdf)             Output file: <EfficientPose-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-09-14 23:26:12
+(epstopdf)                    size: 108345 bytes
+(epstopdf)             Command: <repstopdf --outfile=EfficientPose-eps-converted-to.pdf EfficientPose.eps>
+(epstopdf)             \includegraphics on input line 247.
+Package epstopdf Info: Output file is already uptodate.
+<EfficientPose-eps-converted-to.pdf, id=62, 643.40375pt x 322.20375pt>
+File: EfficientPose-eps-converted-to.pdf Graphic file (type pdf)
+<use EfficientPose-eps-converted-to.pdf>
+Package pdftex.def Info: EfficientPose-eps-converted-to.pdf  used on input line 247.
+(pdftex.def)             Requested size: 386.04523pt x 193.32373pt.
 [5
 
-]
-Chapter 5.
-[6
+ <./EfficientPose-eps-converted-to.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6]
+Chapter 4.
+[7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8]
+Chapter 5.
+Package epstopdf Info: Source file: <TrainProgression.eps>
+(epstopdf)                    date: 2022-09-15 00:34:20
+(epstopdf)                    size: 137364 bytes
+(epstopdf)             Output file: <TrainProgression-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-09-15 00:34:52
+(epstopdf)                    size: 56745 bytes
+(epstopdf)             Command: <repstopdf --outfile=TrainProgression-eps-converted-to.pdf TrainProgression.eps>
+(epstopdf)             \includegraphics on input line 313.
+Package epstopdf Info: Output file is already uptodate.
+<TrainProgression-eps-converted-to.pdf, id=79, 654.445pt x 321.2pt>
+File: TrainProgression-eps-converted-to.pdf Graphic file (type pdf)
+<use TrainProgression-eps-converted-to.pdf>
+Package pdftex.def Info: TrainProgression-eps-converted-to.pdf  used on input line 313.
+(pdftex.def)             Requested size: 458.10838pt x 224.83847pt.
+
+Overfull \hbox (39.8547pt too wide) in paragraph at lines 313--314
+ [] 
+ []
+
+
+Overfull \hbox (112.35713pt too wide) in paragraph at lines 322--331
+ [] 
+ []
+
+[9
+
+ <./TrainProgression-eps-converted-to.pdf>]
+Chapter 6.
+[10
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 []\OT1/cmr/m/n/12 Wikipedia, ``Don-ald knuth.'' $\OT1/cmtt/m/n/12 http : / / en . wikipedia . org / wiki / Donald _
  []
 
-[7
+[11
 
-] [8
+] [12
 
 
 ]
@@ -377,20 +465,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9] (./miniproject_final.aux) ) 
+[13] (./miniproject_final.aux) ) 
 Here is how much of TeX's memory you used:
- 4604 strings out of 478238
- 73272 string characters out of 5850456
- 374327 words of memory out of 5000000
- 22783 multiletter control sequences out of 15000+600000
+ 4709 strings out of 478238
+ 76057 string characters out of 5850456
+ 380327 words of memory out of 5000000
+ 22888 multiletter control sequences out of 15000+600000
  477553 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,11n,76p,934b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on miniproject_final.pdf (17 pages, 617169 bytes).
+ 70i,11n,76p,732b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on miniproject_final.pdf (21 pages, 1023478 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 159 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
