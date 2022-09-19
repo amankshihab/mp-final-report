@@ -1,5 +1,4 @@
 \contentsline {chapter}{List of Figures}{v}{}%
-\contentsline {chapter}{List of Tables}{vi}{}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{}%
 \contentsline {section}{\numberline {1.1}Overview}{1}{}%
 \contentsline {section}{\numberline {1.2}Problem Statement}{1}{}%
@@ -11,14 +10,13 @@
 \contentsline {section}{\numberline {3.3}Modules}{6}{}%
 \contentsline {subsection}{\numberline {3.3.1}EfficientNet}{6}{}%
 \contentsline {subsection}{\numberline {3.3.2}E-Swish}{6}{}%
-\contentsline {section}{\numberline {3.4}Accuracy Measures}{6}{}%
-\contentsline {chapter}{\numberline {4}Datasets}{7}{}%
-\contentsline {section}{\numberline {4.1}MPII Human Pose Dataset}{7}{}%
-\contentsline {section}{\numberline {4.2}Leeds Sports Dataset}{7}{}%
-\contentsline {chapter}{\numberline {5}Results}{9}{}%
-\contentsline {chapter}{\numberline {6}Outputs}{10}{}%
-\contentsline {chapter}{\numberline {7}Conclusion}{13}{}%
-\contentsline {chapter}{Appendices}{15}{}%
-\contentsline {section}{\numberline {.1}Source Code of EfficientPoseRT}{16}{}%
-\contentsline {section}{\numberline {.2}E-Swish Source Code}{25}{}%
-\contentsline {section}{\numberline {.3}Track App Source Code}{25}{}%
+\contentsline {section}{\numberline {3.4}Accuracy Measures}{7}{}%
+\contentsline {chapter}{\numberline {4}Datasets}{8}{}%
+\contentsline {section}{\numberline {4.1}MPII Human Pose Dataset}{8}{}%
+\contentsline {section}{\numberline {4.2}Leeds Sports Dataset}{8}{}%
+\contentsline {chapter}{\numberline {5}Results}{10}{}%
+\contentsline {chapter}{\numberline {6}Outputs}{11}{}%
+\contentsline {chapter}{\numberline {7}Conclusion}{14}{}%
+\contentsline {chapter}{Appendices}{16}{}%
+\contentsline {section}{\numberline {.1}Source Code of EfficientPoseRT}{17}{}%
+\contentsline {section}{\numberline {.2}E-Swish Source Code}{47}{}%

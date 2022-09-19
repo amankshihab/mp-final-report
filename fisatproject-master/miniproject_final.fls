@@ -350,10 +350,6 @@ INPUT ./miniproject_final.lof
 INPUT miniproject_final.lof
 INPUT miniproject_final.lof
 OUTPUT miniproject_final.lof
-INPUT ./miniproject_final.lot
-INPUT miniproject_final.lot
-INPUT miniproject_final.lot
-OUTPUT miniproject_final.lot
 INPUT ./pose-estimation.eps
 INPUT pose-estimation.eps
 INPUT ./pose-estimation.eps
@@ -428,14 +424,6 @@ INPUT ./pose-3-eps-converted-to.pdf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/share/texmf-dist/tex/latex/base/omlcmr.fd
-INPUT /usr/share/texmf-dist/tex/latex/base/omlcmr.fd
-INPUT /usr/share/texmf-dist/tex/latex/base/omlcmr.fd
-INPUT /usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 INPUT miniproject_final.aux
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
